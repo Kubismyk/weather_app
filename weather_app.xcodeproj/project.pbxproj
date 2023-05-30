@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		589FBFD42A26585600419A03 /* ViewControllerSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FBFD32A26585600419A03 /* ViewControllerSecond.swift */; };
+		589FBFD72A2667A900419A03 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 589FBFD62A2667A900419A03 /* Tabman */; };
+		589FBFD92A26734700419A03 /* ViewControllerThird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FBFD82A26734700419A03 /* ViewControllerThird.swift */; };
 		58B2C8762A263CEF0027733C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B2C8752A263CEF0027733C /* AppDelegate.swift */; };
 		58B2C8782A263CEF0027733C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B2C8772A263CEF0027733C /* SceneDelegate.swift */; };
 		58B2C87A2A263CEF0027733C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B2C8792A263CEF0027733C /* ViewController.swift */; };
@@ -17,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		589FBFD32A26585600419A03 /* ViewControllerSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSecond.swift; sourceTree = "<group>"; };
+		589FBFD82A26734700419A03 /* ViewControllerThird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerThird.swift; sourceTree = "<group>"; };
 		58B2C8722A263CEF0027733C /* weather_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weather_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B2C8752A263CEF0027733C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58B2C8772A263CEF0027733C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589FBFD72A2667A900419A03 /* Tabman in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				58B2C8752A263CEF0027733C /* AppDelegate.swift */,
+				589FBFD32A26585600419A03 /* ViewControllerSecond.swift */,
 				58B2C8772A263CEF0027733C /* SceneDelegate.swift */,
 				58B2C8792A263CEF0027733C /* ViewController.swift */,
 				58B2C87B2A263CEF0027733C /* Main.storyboard */,
@@ -66,6 +73,7 @@
 				58B2C8832A263CF10027733C /* LaunchScreen.storyboard */,
 				58B2C8862A263CF10027733C /* Info.plist */,
 				58B2C87E2A263CEF0027733C /* weather_app.xcdatamodeld */,
+				589FBFD82A26734700419A03 /* ViewControllerThird.swift */,
 			);
 			path = weather_app;
 			sourceTree = "<group>";
@@ -86,6 +94,9 @@
 			dependencies = (
 			);
 			name = weather_app;
+			packageProductDependencies = (
+				589FBFD62A2667A900419A03 /* Tabman */,
+			);
 			productName = weather_app;
 			productReference = 58B2C8722A263CEF0027733C /* weather_app.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 58B2C8692A263CEF0027733C;
+			packageReferences = (
+				589FBFD52A2667A900419A03 /* XCRemoteSwiftPackageReference "Tabman" */,
+			);
 			productRefGroup = 58B2C8732A263CEF0027733C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,7 +157,9 @@
 			files = (
 				58B2C8802A263CEF0027733C /* weather_app.xcdatamodeld in Sources */,
 				58B2C87A2A263CEF0027733C /* ViewController.swift in Sources */,
+				589FBFD92A26734700419A03 /* ViewControllerThird.swift in Sources */,
 				58B2C8762A263CEF0027733C /* AppDelegate.swift in Sources */,
+				589FBFD42A26585600419A03 /* ViewControllerSecond.swift in Sources */,
 				58B2C8782A263CEF0027733C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		589FBFD52A2667A900419A03 /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		589FBFD62A2667A900419A03 /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 589FBFD52A2667A900419A03 /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		58B2C87E2A263CEF0027733C /* weather_app.xcdatamodeld */ = {
